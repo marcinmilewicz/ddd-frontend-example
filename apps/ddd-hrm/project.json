@@ -1,0 +1,66 @@
+{
+  "name": "ddd-hrm",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "ddd-hrm",
+  "sourceRoot": "apps/ddd-hrm/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/ddd-hrm",
+        "index": "apps/ddd-hrm/src/index.html",
+        "browser": "apps/ddd-hrm/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/ddd-hrm/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": ["apps/ddd-hrm/src/favicon.ico", "apps/ddd-hrm/src/assets"],
+        "styles": ["apps/ddd-hrm/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "ddd-hrm:build:production"
+        },
+        "development": {
+          "buildTarget": "ddd-hrm:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "ddd-hrm:build"
+      }
+    }
+  }
+}
