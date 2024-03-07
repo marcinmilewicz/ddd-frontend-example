@@ -1,0 +1,9 @@
+{
+  "name": "employee-profile-feature",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/employee-management/employee-profile-feature/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:employee-management", "layer:feature"],
+  "projectType": "library",
+  "targets": {}
+}

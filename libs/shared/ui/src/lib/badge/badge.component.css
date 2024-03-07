@@ -1,0 +1,35 @@
+.user-badge {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 250px;
+  background-color: #f9f9f9;
+}
+
+.user-badge h3,
+.user-badge p {
+  margin: 0;
+}
+
+.user-badge h3 {
+  color: #333;
+  font-size: 16px;
+}
+
+.user-badge p {
+  color: #666;
+  font-size: 14px;
+}
+
+.remove-button {
+  margin-left: 5px;
+  cursor: pointer;
+  color: #999;
+  font-weight: bold;
+}
+
+.remove-button:hover {
+  color: #333;
+}

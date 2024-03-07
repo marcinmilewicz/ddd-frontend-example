@@ -1,0 +1,9 @@
+{
+  "name": "course-catalog-feature",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/learning-management/course-catalog-feature/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:learning-management", "layer:feature"],
+  "projectType": "library",
+  "targets": {}
+}

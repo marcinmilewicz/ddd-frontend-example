@@ -1,0 +1,9 @@
+<div class="user-badge">
+  @if (item(); as item) {
+    <h3>{{ item.name }}</h3>
+    @if (!withoutRemoveButton()) {
+      <span class="remove-button"
+            (click)="removed.emit(item.id)">X</span>
+    }
+  }
+</div>

@@ -1,0 +1,6 @@
+@for (employee of employees(); track employee.id) {
+  <div class="employee-list--item"
+       (click)="navigateToEmployeeProfile(employee.id)">
+    {{ employee.id }} | {{ employee.name }} | {{ employee.position }}
+  </div>
+}

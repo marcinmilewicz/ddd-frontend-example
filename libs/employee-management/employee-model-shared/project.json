@@ -1,0 +1,9 @@
+{
+  "name": "employee-model-shared",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/employee-management/employee-model-shared/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:employee-management", "layer:shared-model"],
+  "projectType": "library",
+  "targets": {}
+}

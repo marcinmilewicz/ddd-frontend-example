@@ -14,7 +14,22 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ddd-hrm/api-layer": ["libs/shared/api-layer/src/index.ts"],
+      "@ddd-hrm/course-catalog-data-access": ["libs/learning-management/course-catalog-data-access/src/index.ts"],
+      "@ddd-hrm/course-catalog-feature": ["libs/learning-management/course-catalog-feature/src/index.ts"],
+      "@ddd-hrm/course-details-data-access": ["libs/learning-management/course-details-data-access/src/index.ts"],
+      "@ddd-hrm/course-details-feature": ["libs/learning-management/course-details-feature/src/index.ts"],
+      "@ddd-hrm/course-model-shared": ["libs/learning-management/course-model-shared/src/index.ts"],
+      "@ddd-hrm/course-shared": ["libs/learning-management/course-shared/src/index.ts"],
+      "@ddd-hrm/employee-management/employee-list-data-access": ["libs/employee-management/employee-list-data-access/src/index.ts"],
+      "@ddd-hrm/employee-management/employee-list-feature": ["libs/employee-management/employee-list-feature/src/index.ts"],
+      "@ddd-hrm/employee-management/employee-model-shared": ["libs/employee-management/employee-model-shared/src/index.ts"],
+      "@ddd-hrm/employee-management/employee-profile-data-access": ["libs/employee-management/employee-profile-data-access/src/index.ts"],
+      "@ddd-hrm/employee-management/employee-profile-feature": ["libs/employee-management/employee-profile-feature/src/index.ts"],
+      "@ddd-hrm/logger": ["libs/shared/logger/src/index.ts"],
+      "@ddd-hrm/shared/ui": ["libs/shared/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

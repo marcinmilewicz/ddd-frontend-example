@@ -1,0 +1,9 @@
+{
+  "name": "employee-list-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/employee-management/employee-list-data-access/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:employee-management", "layer:data-access"],
+  "projectType": "library",
+  "targets": {}
+}

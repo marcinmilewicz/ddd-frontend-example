@@ -13,8 +13,44 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "domain:shared",
+                "onlyDependOnLibsWithTags": ["domain:shared"]
+              },
+              {
+                "sourceTag": "domain:employee-management",
+                "onlyDependOnLibsWithTags": ["domain:employee-management", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:learning-management",
+                "onlyDependOnLibsWithTags": ["domain:learning-management", "domain:shared"]
+              },
+              {
+                "sourceTag": "domain:app",
+                "onlyDependOnLibsWithTags": ["domain:employee-management", "domain:learning-management", "domain:shared"]
+              },
+              {
+                "sourceTag": "layer:feature",
+                "onlyDependOnLibsWithTags": ["layer:feature", "layer:shared", "layer:shared-model", "layer:data-access", "layer:shared-ui", "layer:core"]
+              },
+              {
+                "sourceTag": "layer:shared",
+                "onlyDependOnLibsWithTags": ["layer:shared", "layer:shared-model", "layer:data-access", "layer:shared-ui", "layer:core"]
+              },
+              {
+                "sourceTag": "layer:shared-model",
+                "onlyDependOnLibsWithTags": ["layer:shared-model"]
+              },
+              {
+                "sourceTag": "layer:data-access",
+                "onlyDependOnLibsWithTags": ["layer:shared-model", "layer:data-access", "layer:core"]
+              },
+              {
+                "sourceTag": "layer:shared-ui",
+                "onlyDependOnLibsWithTags": ["layer:shared-ui", "layer:core"]
+              },
+              {
+                "sourceTag": "layer:core",
+                "onlyDependOnLibsWithTags": ["layer:core"]
               }
             ]
           }

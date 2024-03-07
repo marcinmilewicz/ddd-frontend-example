@@ -1,0 +1,14 @@
+@for (course of courses(); track course.id) {
+  <div class="course-list--item">
+    <div (click)="navigateToCourseList(course.id)">
+      <div>{{ course.id }} | {{ course.name }} | {{ course.description }}</div>
+      <div>Seats left: {{ course.seatsLeft }}</div>
+    </div>
+    @if (course.seatsLeft > 0) {
+      <ddd-hrm-select-employee-for-learning
+        [courseId]="course.id"
+        (selected)="onSelectedEmployee()"
+      ></ddd-hrm-select-employee-for-learning>
+    }
+  </div>
+}

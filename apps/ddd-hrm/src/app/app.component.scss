@@ -1,0 +1,21 @@
+nav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item a:hover, .nav-item a.active {
+  background-color: #555;
+}

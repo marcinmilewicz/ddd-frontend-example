@@ -1,0 +1,28 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+.content {
+  margin-top: 20px;
+}
+.field {
+  margin-bottom: 10px;
+}
+.field-label {
+  font-weight: bold;
+}
+.field-value {
+  margin-left: 10px;
+}
+
+.badge:hover {
+  cursor: pointer;
+}

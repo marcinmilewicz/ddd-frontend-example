@@ -1,0 +1,8 @@
+<div class="field">
+  <span class="field-label">{{ label() }}</span>
+  <span class="field-value">@if (fieldValue(); as value) {
+    {{ value }}
+  } @else {
+    <ng-content></ng-content>
+  }</span>
+</div>

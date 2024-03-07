@@ -1,0 +1,36 @@
+<ddd-hrm-card title="Employee Profile">
+  <ng-container content>
+    @if (details(); as details) {
+      <ddd-hrm-card-field label="ID:"
+                          [fieldValue]="details.id"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Name:"
+                          [fieldValue]="details.name"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Position:"
+                          [fieldValue]="details.position"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Email:"
+                          [fieldValue]="details.email"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Phone:"
+                          [fieldValue]="details.phone"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Address:"
+                          [fieldValue]="details.address"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Department:"
+                          [fieldValue]="details.department"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Salary:"
+                          [fieldValue]="details.salary + ' $'"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Start Date:"
+                          [fieldValue]="details.startDate"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="End Date:"
+                          [fieldValue]="details.endDate"></ddd-hrm-card-field>
+      <ddd-hrm-card-field label="Course assignments:">
+        @for (course of courses(); track course.id) {
+          <ddd-hrm-badge
+            class="badge"
+            (click)="onCourseClick(course.id)"
+            [withoutRemoveButton]="true"
+            [item]="course"
+          ></ddd-hrm-badge>
+        }</ddd-hrm-card-field
+      >
+    }
+  </ng-container>
+</ddd-hrm-card>

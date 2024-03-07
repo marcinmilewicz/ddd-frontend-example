@@ -1,0 +1,9 @@
+{
+  "name": "api-layer",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/api-layer/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:shared", "layer:core"],
+  "projectType": "library",
+  "targets": {}
+}

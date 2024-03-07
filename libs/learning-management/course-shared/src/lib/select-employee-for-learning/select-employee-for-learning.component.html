@@ -1,0 +1,8 @@
+<div class="select-container">
+  <select [ngModel]="selectedEmployee()"
+          (ngModelChange)="selectedEmployee.set($event)">
+    @for (employee of employeesForAssignement(); track employee.id) {
+      <option [ngValue]="employee">{{ employee.name }}</option>
+    }
+  </select>
+</div>

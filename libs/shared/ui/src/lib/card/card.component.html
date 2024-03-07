@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="header">
+    <h2>{{ title() }}</h2>
+  </div>
+
+  <div class="content">
+    <ng-content select="[content]"></ng-content>
+  </div>
+  <div class="footer">
+    <ng-content select="[footer]"></ng-content>
+  </div>
+</div>

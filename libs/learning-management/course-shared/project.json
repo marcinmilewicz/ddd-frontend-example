@@ -1,0 +1,9 @@
+{
+  "name": "course-shared",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/learning-management/course-shared/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:learning-management", "layer:shared"],
+  "projectType": "library",
+  "targets": {}
+}

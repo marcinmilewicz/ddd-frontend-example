@@ -1,0 +1,9 @@
+{
+  "name": "shared-ui",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/ui/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:shared", "layer:shared-ui"],
+  "projectType": "library",
+  "targets": {}
+}

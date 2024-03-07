@@ -1,0 +1,9 @@
+{
+  "name": "course-catalog-data-access",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/learning-management/course-catalog-data-access/src",
+  "prefix": "ddd-hrm",
+  "tags": ["domain:learning-management", "layer:data-access"],
+  "projectType": "library",
+  "targets": {}
+}

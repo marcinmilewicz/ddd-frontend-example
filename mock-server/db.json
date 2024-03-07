@@ -1,0 +1,195 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "Junior Software Developer",
+      "email": "johndoe@gmail.com",
+      "phone": "12345",
+      "address": "1234, 5th Avenue, New York",
+      "department": "Software Development",
+      "salary": 100000,
+      "startDate": "2021-01-01",
+      "endDate": "2026-12-31"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "position": "Software Developer",
+      "email": "janedoe@gmail.com",
+      "phone": "22345",
+      "address": "2234, 5th Avenue, New York",
+      "department": "Software Development",
+      "salary": 130000,
+      "startDate": "2020-01-01",
+      "endDate": "2025-12-31"
+    },
+    {
+      "id": 3,
+      "name": "Jim Doe",
+      "position": "Senior Software Developer",
+      "email": "jim@ff.pl",
+      "phone": "32345",
+      "address": "3234, 5th Avenue, New York",
+      "department": "Software Development",
+      "salary": 150000,
+      "startDate": "2020-01-01",
+      "endDate": "2025-12-31"
+    },
+    {
+      "id": 4,
+      "name": "Joseph Hawkins",
+      "position": "Junior Software Developer",
+      "email": "bsloan@lewis.com",
+      "phone": "643.796.2794",
+      "address": "308 Caldwell Court, Aliciaton, DE 43259",
+      "department": "Software Development",
+      "salary": 70530,
+      "startDate": "2023-10-16",
+      "endDate": "2028-02-08"
+    },
+    {
+      "id": 5,
+      "name": "Christopher Fletcher",
+      "position": "Junior Software Developer",
+      "email": "lawrence35@miller.com",
+      "phone": "(977)286-7144",
+      "address": "84032 Stout Gateway, Bakerbury, VT 33046",
+      "department": "Software Development",
+      "salary": 136139,
+      "startDate": "2023-08-23",
+      "endDate": "2025-01-12"
+    },
+    {
+      "id": 6,
+      "name": "Eric Parsons",
+      "position": "Senior Software Developer",
+      "email": "qramirez@reyes.org",
+      "phone": "(044)421-1147x176",
+      "address": "16251 Warren Harbors Suite 700, West Evanmouth, ID 39163",
+      "department": "Software Development",
+      "salary": 120368,
+      "startDate": "2020-12-26",
+      "endDate": "2028-08-07"
+    },
+    {
+      "id": 7,
+      "name": "Cynthia Patton",
+      "position": "Software Developer",
+      "email": "ahendrix@hotmail.com",
+      "phone": "(363)413-8110x2743",
+      "address": "199 Allen Fall, Hobbsside, MT 67635",
+      "department": "Software Development",
+      "salary": 129170,
+      "startDate": "2021-03-26",
+      "endDate": "2027-05-31"
+    },
+    {
+      "id": 8,
+      "name": "Tina Gonzales",
+      "position": "Junior Software Developer",
+      "email": "yrobinson@daniels-garza.com",
+      "phone": "001-820-510-2540x1448",
+      "address": "669 Alicia Fields, South Sheila, MI 61055",
+      "department": "Software Development",
+      "salary": 165706,
+      "startDate": "2019-04-28",
+      "endDate": "2028-08-14"
+    },
+    {
+      "id": 9,
+      "name": "Nathaniel Gomez",
+      "position": "Team Lead",
+      "email": "dillonelizabeth@gmail.com",
+      "phone": "+1-263-184-0242x718",
+      "address": "10895 Tammy Station Apt. 979, Phamchester, IL 45958",
+      "department": "Software Development",
+      "salary": 104236,
+      "startDate": "2024-01-05",
+      "endDate": "2025-12-02"
+    },
+    {
+      "id": 10,
+      "name": "Mr. Benjamin Roberts",
+      "position": "Team Lead",
+      "email": "denisepalmer@hotmail.com",
+      "phone": "673-268-1828",
+      "address": "PSC 5070, Box 3552, APO AA 08993",
+      "department": "Software Development",
+      "salary": 186752,
+      "startDate": "2021-05-18",
+      "endDate": "2026-11-07"
+    },
+    {
+      "id": 11,
+      "name": "Bailey Davis",
+      "position": "Software Architect",
+      "email": "tpage@gmail.com",
+      "phone": "001-470-253-0635x234",
+      "address": "76101 Kevin Street Apt. 642, New Michelleton, MI 08611",
+      "department": "Software Development",
+      "salary": 164591,
+      "startDate": "2019-10-07",
+      "endDate": "2027-11-29"
+    },
+    {
+      "id": 12,
+      "name": "Garrett Nichols",
+      "position": "Software Developer",
+      "email": "greenelizabeth@yahoo.com",
+      "phone": "545.771.9479x243",
+      "address": "653 Emily Point, West Shelly, IL 35727",
+      "department": "Software Development",
+      "salary": 171907,
+      "startDate": "2023-10-29",
+      "endDate": "2026-01-19"
+    },
+    {
+      "id": 13,
+      "name": "Linda Roy",
+      "position": "Software Architect",
+      "email": "hamptoncameron@price.com",
+      "phone": "6631958461",
+      "address": "46467 Samantha Springs Suite 023, West Oscar, SD 77204",
+      "department": "Software Development",
+      "salary": 163425,
+      "startDate": "2021-11-28",
+      "endDate": "2027-06-05"
+    }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "description": "The best programming language in the world",
+      "seats": 5,
+      "assignees": [
+        3,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Java",
+      "description": "Another good programming language",
+      "seats": 4,
+      "assignees": [
+        7,
+        1,
+        6
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Angular",
+      "description": "A framework for building client applications in HTML, CSS, and JavaScript/TypeScript",
+      "seats": 3,
+      "assignees": [
+        3,
+        5
+      ]
+    }
+  ]
+}

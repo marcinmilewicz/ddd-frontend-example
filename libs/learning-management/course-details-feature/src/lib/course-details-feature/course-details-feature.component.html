@@ -1,0 +1,26 @@
+@if (details(); as details) {
+<ddd-hrm-card title="Course Details">
+  <ng-container content>
+    <ddd-hrm-card-field label="Course ID:" [fieldValue]="details.id"></ddd-hrm-card-field>
+    <ddd-hrm-card-field label="Course Name:" [fieldValue]="details.name"></ddd-hrm-card-field>
+    <ddd-hrm-card-field label="Course Description:" [fieldValue]="details.description"></ddd-hrm-card-field>
+    <ddd-hrm-card-field label="Seats:" [fieldValue]="details.seats"></ddd-hrm-card-field>
+    <ddd-hrm-card-field label="Participants:">
+      @if (participants()?.length) {
+      <div class="participants-list">
+        @for (participant of participants(); track participant?.id) {
+        <ddd-hrm-badge [item]="participant!" (removed)="onRemoved(details.id, $event)"></ddd-hrm-badge>
+        }
+      </div>
+      } @else { No participants }</ddd-hrm-card-field
+    >
+  </ng-container>
+  <ng-container footer>
+    @if (details.seats > details.assignees.length) {
+    <ddd-hrm-select-employee-for-learning [courseId]="details.id" (selected)="onSelectedEmployee()"></ddd-hrm-select-employee-for-learning>
+    } @else {
+    <div>Maximum assignees reached.</div>
+    }
+  </ng-container>
+</ddd-hrm-card>
+}
