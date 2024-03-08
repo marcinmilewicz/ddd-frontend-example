@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { Component, Signal, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute } from '@angular/router';
-import { CourseDetailsApiService } from '@ddd-hrm/course-details-data-access';
+import { CourseDetails, CourseDetailsApiService, EmployeeAssignmentForCourse } from '@ddd-hrm/course-details-data-access';
 import { SelectEmployeeForLearningComponent } from '@ddd-hrm/course-shared';
 import { BadgeComponent, CardComponent, CardFieldComponent } from '@ddd-hrm/shared/ui';
 
@@ -19,21 +19,23 @@ export class CourseDetailsFeatureComponent {
   private readonly courseDetailsApiService: CourseDetailsApiService = inject(CourseDetailsApiService);
   private readonly activatedRoute: ActivatedRoute = inject(ActivatedRoute);
 
-  private readonly refresh = new BehaviorSubject(void 0);
+  private readonly refresh: BehaviorSubject<void> = new BehaviorSubject<void>(void 0);
 
-  protected readonly details = toSignal(
+  protected readonly courseDetails: Signal<CourseDetails | undefined> = toSignal(
     this.refresh.pipe(
       withLatestFrom(this.activatedRoute.params, (_, id) => id),
       mergeMap(({ id }) => this.courseDetailsApiService.fetchCourseDetails(id))
     )
   );
-  protected readonly assignableEmployees = toSignal(this.courseDetailsApiService.fetchEmployeeAssignments());
-  protected participants = computed(() =>
-    this.details()?.assignees.map((attendee) => this.assignableEmployees()?.find((employee) => employee.id === attendee))
+  protected readonly assignableEmployees: Signal<EmployeeAssignmentForCourse[] | undefined> = toSignal(
+    this.courseDetailsApiService.fetchEmployeeAssignments()
+  );
+  protected employeeAssignments = computed(() =>
+    this.courseDetails()?.assignees.map((attendee) => this.assignableEmployees()?.find((employee) => employee.id === attendee))
   );
 
   protected onSelectedEmployee(): void {
-    this.refresh.next(void 0);
+    this.refresh.next();
   }
 
   protected onRemoved(courseId: number, employeeId: number): void {

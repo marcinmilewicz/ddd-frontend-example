@@ -1,4 +1,4 @@
-It's "real-life" example of the DDD in the frontend. It's a simple application that show how to implement DDD solution utilizing NX Workspace
+It's "real-life" example of the strategic DDD in the frontend. It's a simple application that show how to implement DDD strategic solution utilizing NX Workspace
 
 The separate domain correspond to the two views as below:
 ![img.png](img.png)
@@ -15,7 +15,7 @@ The entire architecture is based on the DDD principles and some takewayes from t
 
 ![img_3.png](img_3.png)
 
-The repository has been created for a knwledge sharing purpose and it's a part of the presentation about the DDD in the frontend. 
+The repository has been created for a knwledge sharing purpose and it's a part of the presentation about the strategic DDD in the frontend. 
 
 How to run the application:
 

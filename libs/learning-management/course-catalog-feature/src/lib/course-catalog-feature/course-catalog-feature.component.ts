@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, Signal, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { Router } from '@angular/router';
-import { CourseCatalogApiService } from '@ddd-hrm/course-catalog-data-access';
+import { CourseCatalogApiService, CourseListItem } from '@ddd-hrm/course-catalog-data-access';
 import { SelectEmployeeForLearningComponent } from '@ddd-hrm/course-shared';
 import { BehaviorSubject, mergeMap } from 'rxjs';
 
@@ -19,7 +19,9 @@ export class CourseCatalogFeatureComponent {
 
   private readonly refresh = new BehaviorSubject(void 0);
 
-  courses = toSignal(this.refresh.pipe(mergeMap(() => this.courseCatalogApiService.fetchCourseCatalog())));
+  courses: Signal<CourseListItem[] | undefined> = toSignal(
+    this.refresh.pipe(mergeMap(() => this.courseCatalogApiService.fetchCourseCatalog()))
+  );
 
   protected navigateToCourseList(courseId: number): void {
     this.router.navigate(['/learning-catalog', courseId]);

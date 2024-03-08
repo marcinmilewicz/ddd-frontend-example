@@ -2,6 +2,11 @@ import { Route } from '@angular/router';
 
 export const appRoutes: Route[] = [
   {
+    path: '',
+    redirectTo: 'employee-list',
+    pathMatch: 'full',
+  },
+  {
     path: 'employee-list',
     loadComponent: () =>
       import('@ddd-hrm/employee-management/employee-list-feature').then(
