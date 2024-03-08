@@ -16,3 +16,7 @@ The entire architecture is based on the DDD principles and some takewayes from t
 ![img_3.png](img_3.png)
 
 The repository has been created for a knwledge sharing purpose and it's a part of the presentation about the DDD in the frontend. 
+
+How to run the application:
+
+`npm run start`
